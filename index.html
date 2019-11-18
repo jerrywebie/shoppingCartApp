@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Easy Shop</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <header>
+                <nav>
+                    <div class="logo-container">easyshop</div>
+                    <div class="menu-container">
+                        <ul id="nav-tabs">
+                            <li data-target="#home" class="active fa fa-home"></li>
+                            <li data-target="#login" class="fa fa-sign-in"></li>
+                            <li data-target="#signup" class="fa fa-user"></li>
+                            <li data-target="#cart" class="fa fa-shopping-cart"><span class="total-item"></span></li>
+                            <!--<li class="login-user-container"></li>-->
+                        </ul>
+                        <ul id="login-user">
+                            <li class="login-user-name"></li>
+                            <!-- <li class="fa fa-sign-out"></li>-->
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="panel active" id="home">
+                    <aside class="sub-menu-container">
+                        <ul id="category-tabs">
+                            <!--<li data-subtarget="#allcategory">category</li>-->
+                            <h4>category</h4>
+                            <li data-subtarget="#men">men</li>
+                            <li data-subtarget="#ladies">ladies</li>
+                            <li data-subtarget="#kids">kids</li>
+                        </ul>
+                    </aside>
+                    <section id="category-tabs-content">
+                        <div class="search-container">
+                            <input type="text" id="search" placeholder="search...">
+                        </div>
+                        <div class="sub-panel active" id="allcategory">
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/kid1.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">pink grown</span>
+                                    <span class="item-price">10$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/kid3.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">white skirt</span>
+                                    <span class="item-price">24$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/men1.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">grey t-shirt</span>
+                                    <span class="item-price">30$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/men2.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">green t-shirt</span>
+                                    <span class="item-price">33$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/lady1.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">grey blouse</span>
+                                    <span class="item-price">15$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/lady2.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">white blouse</span>
+                                    <span class="item-price">18$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/kid6.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">light blue jeans</span>
+                                    <span class="item-price">22.46$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/lady6.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">red blouse</span>
+                                    <span class="item-title">50.35$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-panel" id="men">
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/men1.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">grey t-shirt</span>
+                                    <span class="item-price">30$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/men4.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">yellow t-shirt</span>
+                                    <span class="item-price">24$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/men3.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">dark blue t-shirt</span>
+                                    <span class="item-price">10$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/men5.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">white t-shirt</span>
+                                    <span class="item-price">24$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/men2.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">green t-shirt</span>
+                                    <span class="item-price">33$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/men6.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">blue shirt</span>
+                                    <span class="item-price">24$</span>
+                                    <span><button class="add-to-cart">add to cart</button></s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-panel" id="ladies">
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/lady3.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">pink blouse</span>
+                                    <span class="item-price">10$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/lady1.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">grey blouse</span>
+                                    <span class="item-price">15$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/lady2.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">white blouse</span>
+                                    <span class="item-price">18$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/lady4.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">white and black spot blouse</span>
+                                    <span class="item-price">24$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/lady5.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">pink short sleeve blouse</span>
+                                    <span class="item-price">10$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/lady6.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">red blouse</span>
+                                    <span class="item-price">50.35$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-panel" id="kids">
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/kid8.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">red square night dress</span>
+                                    <span class="item-price">10$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/kid6.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">light blue jeans</span>
+                                    <span class="item-price">22.46$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/kid4.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">blue stripe rumper</span>
+                                    <span class="item-price">10$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/kid3.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">white skirt</span>
+                                    <span class="item-price">24$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                            <div class="item-container">
+                                <div class="item">
+                                    <span><img src="images/kid2.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">red and whit spot dress</span>
+                                    <span class="item-price">10$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                                <div class="item">
+                                    <span><img src="images/kid1.jpg" class="reponsive" width="200" height="200"></span>
+                                    <span class="item-title">pink grown</span>
+                                    <span class="item-price">10$</span>
+                                    <span><button class="add-to-cart">add to cart</button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="panel" id="login">
+                    <form id="login-form">
+                        <h4>log in</h4>
+                        <div>
+                            <label for="txtUsername">username</label>
+                            <input type="text" id="txtUsername">
+                        </div>
+                        <div>
+                            <label for="txtPassword">password</label>
+                            <input type="text" id="txtPassword">
+                        </div>
+                        <div class="button-container">
+                            <button type="submit">login</button>
+                            <button type="reset">cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel" id="signup">
+                    <form id="signup-form">
+                        <h4>sign up</h4>
+                        <div>
+                            <label for="newUsername">username</label>
+                            <input type="text" id="newUsername">
+                        </div>
+                        <div>
+                            <label for="newEmail">email</label>
+                            <input type="text" id="newEmail">
+                        </div>
+                        <div>
+                            <label for="newPassword">password</label>
+                            <input type="text" id="newPassword">
+                        </div>
+                        <div>
+                            <label for="confirmPassword">confirm password</label>
+                            <input type="text" id="confirmPassword">
+                        </div>
+                        <div class="button-container">
+                            <button type="submit">sign up</button>
+                            <button type="reset">cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel" id="cart">
+                    <div class="cart-summary">
+                        <h2>cart</h2>
+                        <table id="cart-list">
+                            <thead>
+                                <tr>
+                                    <th>no.</th>
+                                    <th>product</th>
+                                    <th>price(per item)</th>
+                                    <th>quantity</th>
+                                    <th>total</th>
+                                    <th class="changedQty">changedQty</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-item-list">
+                            </tbody>
+                        </table>
+                        <div>total:<span id="cart-total"></span></div>
+                        <div class="button-container">
+                            <input type="button" id="clear-cart-btn" value="clear cart">
+                            <input type="button" id="checkout-btn" value="check out">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="checkout-summary">
+                    <h2>Check out detail</h2>
+                    <div id="user-summary">
+                        <h4>user detail</h4>
+                        <form id="user-detail">
+                            <input type="text" placeholder="name">
+                            <input type="text" placeholder="email">
+                            <input type="text" placeholder="mobile">
+                            <input type="text" placeholder="address">
+                        </form>
+                    </div>
+                    <div id="cart-message">
+                        <h4>cart</h4>
+                        <table id="cart-result">
+                            <thead>
+                                <tr>
+                                    <th>product</th>
+                                    <th>changedQty</th>
+                                    <th>total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="checkout-item-list">
+                            </tbody>
+                        </table>
+                        <div>total:<span id="checkout-total"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <input type="button" id="cart-btn" value="cart">
+                        <input type="button" id="ship-btn" value="shipping">
+                    </div>
+                </div>
+                <div class="ship-summary">
+                    <p>user detail(from checkout data)</p>
+                    <p>shopping detail(from checkout data)</p>
+                    <div class="button-container">
+                        <input type="button" id="pay-btn" value="pay by paypel">
+                    </div>
+                </div>
+                <div class="payment-summary">
+                    <p class="thank-you-message">
+                        Thank you login user!<br>
+                        Thank you for shopping and payment<br>
+                        We will ship your order within 7 days.
+                    </p>
+                </div>
+        </div>
+        </main>
+    </div>
+    </div>
+    <footer>
+        <div class="note-container">
+            <div class="note-item">
+                <a href="#">faq</a>
+                <a href="#">customer services</a>
+                <a href="#">brances</a>
+            </div>
+            <div class="note-item">
+                <a href="#">about</a>
+                <a href="#">contact us</a>
+                <a href="#">our team</a>
+            </div>
+            <div class="note-item">
+                <a href="#">warranty and replacement</a>
+                <a href="#">on sales</a>
+                <a href="#">share with us</a>
+            </div>
+        </div>
+        <div class="footer-text">developed by jerry.&copy;2019 easy shop</div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
